@@ -1,0 +1,8 @@
+name 'puppet-vagrant'
+version '0.0.1'
+source 'git://github.com/shr3kst3r/puppet-vagrant.git'
+author 'Dennis Rowe'
+license 'MIT'
+summary 'Install vagrant'
+description 'Install vagrant package'
+project_page 'https://github.com/shr3kst3r/puppet-vagrant.git'
