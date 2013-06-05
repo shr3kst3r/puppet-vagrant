@@ -3,7 +3,7 @@ class vagrant {
   case $::operatingsystem {
     centos, redhat: {
       case $::architecture {
-        x86_64: {
+        x86_64, amd64: {
           $vagrant_url = 'http://files.vagrantup.com/packages/7e400d00a3c5a0fdf2809c8b5001a035415a607b/vagrant_1.2.2_x86_64.rpm'
           $vagrant_provider = 'rpm'
         }
@@ -18,7 +18,7 @@ class vagrant {
     }
     debian, ubuntu: {
       case $::architecture {
-        x86_64: {
+        x86_64, amd64: {
           $vagrant_url = 'http://files.vagrantup.com/packages/7e400d00a3c5a0fdf2809c8b5001a035415a607b/vagrant_1.2.2_x86_64.deb'
           $vagrant_provider = 'apt'
         }
