@@ -1,5 +1,5 @@
 name 'shr3kst3r-vagrant'
-version '0.0.3'
+version '0.0.4'
 source 'git://github.com/shr3kst3r/puppet-vagrant.git'
 author 'Dennis Rowe'
 license 'MIT'
