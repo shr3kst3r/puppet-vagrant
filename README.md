@@ -1,6 +1,6 @@
 # Vagrant module for Puppet
 
-This module installs vagrant 1.2.2 from http://downloads.vagrantup.com/.
+This module installs vagrant 1.2.7 from http://downloads.vagrantup.com/.
 
 ## Description
 
