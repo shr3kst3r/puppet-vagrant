@@ -29,7 +29,7 @@ class vagrant ($git_hash = '7ec0ee1d00a916f80b109a298bab08e391945243', $version 
   $base_url = "http://files.vagrantup.com/packages/${git_hash}"
 
   case $::operatingsystem {
-    centos, redhat: {
+    centos, redhat, fedora: {
       case $::architecture {
         x86_64, amd64: {
           $vagrant_url = "${base_url}/vagrant_${version}_x86_64.rpm"
