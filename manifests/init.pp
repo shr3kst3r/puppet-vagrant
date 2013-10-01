@@ -69,7 +69,7 @@ class vagrant (
     }
     windows: {
       $vagrant_url = "${base_url}/Vagrant_${version}.msi"
-      $vagrant_provider = 'msi'
+      $vagrant_provider = 'windows'
     }
     default: {
       fail("Unrecognized operating system: ${::operatingsystem}")
