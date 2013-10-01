@@ -25,7 +25,11 @@
 #    version  => '1.2.2'
 #  }
 #
-class vagrant ($git_hash = '7ec0ee1d00a916f80b109a298bab08e391945243', $version = '1.2.7') {
+class vagrant (
+  $git_hash = '7ec0ee1d00a916f80b109a298bab08e391945243',
+  $version = '1.2.7',
+) {
+
   $base_url = "http://files.vagrantup.com/packages/${git_hash}"
 
   case $::operatingsystem {
