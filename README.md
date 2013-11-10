@@ -30,16 +30,20 @@ Install 1.2.2
 
 Install plugin
 
-    vagrant::plugin { 'vagrant-hostmanager': }
+    vagrant::plugin { 'vagrant-hostmanager':
+       home => '/home/myuser'
+    }
 
 Install plugin in specific version
 
     vagrant::plugin { 'vagrant-hostmanager':
+       home    => '/home/myuser',
        version => 0.8.0
     }
 
 Install a pre-release plugin
 
     vagrant::plugin { 'vagrant-hostmanager':
-       pre_release => true
+       home       => '/home/myuser',
+       prerelease => true
     }
