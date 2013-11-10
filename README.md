@@ -27,3 +27,23 @@ Install 1.2.2
        git_hash => '7e400d00a3c5a0fdf2809c8b5001a035415a607b',
        version  => '1.2.2'
     }
+
+Install plugin
+
+    vagrant::plugin { 'vagrant-hostmanager':
+       home => '/home/myuser'
+    }
+
+Install plugin in specific version
+
+    vagrant::plugin { 'vagrant-hostmanager':
+       home    => '/home/myuser',
+       version => 0.8.0
+    }
+
+Install a pre-release plugin
+
+    vagrant::plugin { 'vagrant-hostmanager':
+       home       => '/home/myuser',
+       prerelease => true
+    }
