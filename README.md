@@ -27,3 +27,7 @@ Install 1.2.2
        git_hash => '7e400d00a3c5a0fdf2809c8b5001a035415a607b',
        version  => '1.2.2'
     }
+
+Install bash completion
+
+    include vagrant::bash
